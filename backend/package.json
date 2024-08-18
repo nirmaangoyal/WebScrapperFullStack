@@ -1,29 +1,25 @@
 {
-  "name": "olostepwebscrapper",
+  "name": "olostepwebscrapper-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "start": "node dist/server.js",
+    "dev": "ts-node-esm src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/axios": "^0.14.0",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
-    "@types/express-session": "^1.18.0",
-    "@types/mongoose": "^5.11.97",
     "@types/node": "^22.4.0",
-    "express-session": "^1.18.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.6",
     "axios": "^1.7.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
@@ -34,8 +30,6 @@
     "express-validator": "^7.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
-    "mongoose": "^8.5.3",
-    "puppeteer": "^23.1.0",
-    "react-loader-spinner": "^6.1.6"
+    "mongoose": "^8.5.3"
   }
 }
