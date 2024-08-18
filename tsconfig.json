@@ -3,20 +3,13 @@
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
     "outDir": "./dist",
-    "rootDir": "./src",
-    "typeRoots": ["./node_modules/@types", "./src/types"],
-    "types": ["node", "express", "express-session"],
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
+  "include": ["*.ts"],
   "exclude": ["node_modules", "dist"]
 }
