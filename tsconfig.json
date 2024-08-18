@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
-    "rootDir": "./backend",
-    "typeRoots": ["./node_modules/@types", "./backend/types"],
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "types": ["node", "express", "express-session"],
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "@backend/*": ["backend/*"]
+      "@/*": ["./*"]
     }
   },
-  "include": ["backend/**/*"],
-  "exclude": ["node_modules", "frontend"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
